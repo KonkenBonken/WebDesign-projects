@@ -1,0 +1,112 @@
+<html>
+<head>
+<link rel="icon" type="image/png" href="Calcnd.png"/>
+<title>Calc - Temperature</title>
+<script data-ad-client="ca-pub-2422033382456580" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<style>
+div.plats {
+  margin: 0px 0px 0px 750px;
+}
+input[type=button] {
+  background-color: #334;
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: inline-block;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #334;
+}
+.topnav a.active {
+  background-color: #321;
+  color: white;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #223;
+}
+input[type=number] {
+    border: none;
+    border-bottom: 3px solid #334; 
+    background: none; 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.scaled {
+  transform: scale(1.5); 
+}
+</style>
+<script language="javascript" type="text/javascript">
+   
+function Cel(){
+var c = document.getElementById('Celsius').value;
+var f = c * 9 / 5 + 32;
+document.getElementById("Fahrenheit").value = f;
+var k = c / 1 + 273.15 / 1;
+document.getElementById("Kelvin").value = k;
+}
+function Far(){
+var f = document.getElementById('Fahrenheit').value;
+var c = (f - 32) / (1.8);
+document.getElementById("Celsius").value = c;
+var k = c / 1 + 273.15 / 1;
+document.getElementById("Kelvin").value = k;
+}
+function Kel(){
+var k = document.getElementById('Kelvin').value;
+var c = k - 273.15;
+document.getElementById("Celsius").value = c;
+var f = c * 9 / 5 + 32;
+document.getElementById("Fahrenheit").value = f;
+}
+
+
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head><body style="background-color:#bcd;">
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="Geometry.html">Geometry</a></li>
+  <li><a href="Temperature.html">Temperature</a></li>
+  <li><a href="Time.html">Time</a></li>
+  <li><a href="Pi.html">Pi</a></li>
+  <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=konrad05pettersson@gmail.com&su=Bug+Report!&body=Describe+the+founded+bug+here:">Report a Bug</a></li>
+</ul>
+<noscript><h1>Sorry, your browser does not support JavaScript!</h1></noscript>
+<div class="plats">
+<p><br><br>
+Celsius:<br><input type="number" id="Celsius"/ OnChange="Cel()"/><br><br><br>
+Fahrenheit:<br><input type=number id="Fahrenheit"/ Onchange="Far()"/><br><br><br>
+Kelvin:<br><input type="number" id="Kelvin"/ Onchange="Kel()"/><br><br><br>
+
+</p>
+</div>
+
+
+
+
+
+</body>
+
+</html>

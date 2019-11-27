@@ -1,0 +1,256 @@
+<html>
+<head>
+<script data-ad-client="ca-pub-2422033382456580" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<link rel="icon" type="image/png" href="Calcnd.png"/>
+<title>Calc - Geometry</title>
+<style>
+div.plats {
+  margin: 0px 0px 0px 750px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #334;
+ 
+}
+.topnav a.active {
+  background-color: #321;
+  color: white;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #223;
+}
+input[type=number] {
+    border: none;
+    border-bottom: 3px solid #334; 
+    background: none; 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=button] {
+  background-color: #334;
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: inline-block;
+}
+.scaled {
+  transform: scale(0.5); 
+}
+</style>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script>
+function r(){
+var r = document.getElementById('r').value;
+var d = r * 2;
+var o = d * Math.PI;
+var a = r * r * Math.PI;
+document.getElementById("o").value = o;
+document.getElementById("a").value = a;
+document.getElementById("d").value = d;
+}
+function d(){
+var d = document.getElementById('d').value;
+var r = d / 2;
+var o = d * Math.PI;
+var a = r * r * Math.PI;
+document.getElementById("o").value = o;
+document.getElementById("a").value = a;
+document.getElementById("r").value = r;
+}
+function o(){
+var o = document.getElementById('o').value;
+var d = o / Math.PI;
+var r = d / 2;
+var a = r * r * Math.PI;
+document.getElementById("a").value = a;
+document.getElementById("r").value = r;
+document.getElementById("d").value = d;
+}
+function a(){
+var a = document.getElementById('a').value;
+var d = 2 * Math.sqrt(a / Math.PI);
+var r = d / 2;
+var o = d * Math.PI;
+document.getElementById("o").value = o;
+document.getElementById("r").value = r;
+document.getElementById("d").value = d;
+}
+function sqs(){
+var s = document.getElementById('4s').value;
+var d = s * Math.sqrt(2);
+var a = s * s;
+var o = s * 4;
+document.getElementById("4d").value = d;
+document.getElementById("4a").value = a;
+document.getElementById("4o").value = o;
+}
+function sqd(){
+var d = document.getElementById('4d').value;
+var s = d / Math.sqrt(2);
+var a = s * s;
+var o = s * 4;
+document.getElementById("4s").value = s;
+document.getElementById("4a").value = a;
+document.getElementById("4o").value = o;
+}
+function sqa(){
+var a = document.getElementById('4a').value;
+var s = Math.sqrt(a);
+var d = s * Math.sqrt(2);
+var o = s * 4;
+document.getElementById("4s").value = s;
+document.getElementById("4d").value = d;
+document.getElementById("4o").value = o;
+}
+function sqo(){
+var o = document.getElementById('4o').value;
+var s = o / 4;
+var d = s * Math.sqrt(2);
+var a = s * s;
+document.getElementById("4s").value = s;
+document.getElementById("4d").value = d;
+document.getElementById("4a").value = a;
+}
+function rs(){
+var rs1 = document.getElementById('rs1').value;
+var rs2 = document.getElementById('rs2').value;
+var o = rs1 * 2 + rs2 * 2;
+var d = Math.sqrt(rs1 * rs1 + rs2 * rs2);
+var a = rs1 * rs2;
+document.getElementById("ro").value = o;
+document.getElementById("rd").value = d;
+document.getElementById("ra").value = a;
+}
+function cs(){
+var s = document.getElementById('cs').value;
+var v = s * s * s;
+var d = s * Math.sqrt(3);
+var a = (s * s) * 6;
+document.getElementById("cv").value = v;
+document.getElementById("cd").value = d;
+document.getElementById("ca").value = a;
+}
+function cd(){
+var d = document.getElementById('cd').value;
+var s = d / Math.sqrt(3);
+var v = s * s * s;
+var a = (s * s) * 6;
+document.getElementById("cv").value = v;
+document.getElementById("cs").value = s;
+document.getElementById("ca").value = a;
+}
+function cv(){
+var v = document.getElementById('cv').value;
+var s = Math.cbrt(v);
+var d = s * Math.sqrt(3);
+var a = (s * s) * 6;
+document.getElementById("cd").value = d;
+document.getElementById("cs").value = s;
+document.getElementById("ca").value = a;
+}
+function ca(){
+var a = document.getElementById('ca').value;
+var s = Math.sqrt(a / 6);
+var d = s * Math.sqrt(3);
+var v = s * s * s;
+document.getElementById("cd").value = d;
+document.getElementById("cs").value = s;
+document.getElementById("cv").value = v;
+}
+function spr(){
+var r = document.getElementById('spr').value;
+var v = (4 / 3) * Math.PI * (r * r * r) ;
+var d = r * 2;
+var a = 4 * Math.PI * r * 2;
+document.getElementById("spd").value = d;
+document.getElementById("spa").value = a;
+document.getElementById("spv").value = v;
+}
+function spd(){
+var d = document.getElementById('spd').value;
+var r = d / 2;
+var v = (4 / 3) * Math.PI * (r * r * r);
+var a = 4 * Math.PI * r * 2;
+document.getElementById("spr").value = r;
+document.getElementById("spa").value = a;
+document.getElementById("spv").value = v;
+}
+function spv(){
+var v = document.getElementById('spv').value;
+var r = Math.cbrt(3 * v / (4 * Math.PI));
+var d = r * 2;
+var a = 4 * Math.PI * r * 2;
+document.getElementById("spr").value = r;
+document.getElementById("spa").value = a;
+document.getElementById("spd").value = d;
+}
+function spa(){
+var a = document.getElementById('spa').value;
+var r = Math.sqrt(a / (4 * Math.PI));
+var d = r * 2;
+var v = (4 / 3) * Math.PI * (r * r * r);
+document.getElementById("spr").value = r;
+document.getElementById("spv").value = v;
+document.getElementById("spd").value = d;
+}
+</script>
+<body style="background-color:#bcd;">
+<div class="fixed"><ul position: fixed;>
+ <ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="Geometry.html">Geometry</a></li>
+  <li><a href="Temperature.html">Temperature</a></li>
+  <li><a href="Time.html">Time</a></li>
+  <li><a href="Pi.html">Pi</a></li>
+  <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=konrad05pettersson@gmail.com&su=Bug+Report!&body=Describe+the+founded+bug+here:">Report a Bug</a></li>
+</ul></div>
+<noscript><h1>Sorry, your browser does not support JavaScript!</h1></noscript>
+<div class="plats">
+<p><h2>Circle</h2>
+Radius:<br><input type="number" id="r"/ OnChange="r()"/><br><br><br>
+Diameter:<br><input type="number" id="d"/ OnChange="d()"/><br><br><br>
+Circumference:<br><input type="number" id="o"/ OnChange="o()"/><br><br><br>
+Area:<br><input type=number id="a"/ OnChange="a()"/><br><br><br>
+</p>
+<p><h2>Square</h2>
+Side:<br><input type="number" id="4s"/ OnChange="sqs()"/><br><br><br>
+Diagonal:<br><input type="number" id="4d"/ OnChange="sqd()"/><br><br><br>
+Circumference:<br><input type="number" id="4o"/ OnChange="sqo()"/><br><br><br>
+Area:<br><input type="number" id="4a"/ OnChange="sqa()"/><br><br><br>
+</p>
+<p><h2>Cube</h2>
+Side:<br><input type="number" id="cs"/ OnChange="cs()"/><br><br><br>
+Diagonal:<br><input type="number" id="cd"/ OnChange="cd()"/><br><br><br>
+Volume:<br><input type="number" id="cv"/ OnChange="cv()"/><br><br><br>
+Surface Area:<br><input type="number" id="ca"/ OnChange="ca()"/><br><br><br>
+</p>
+<p><h2>Sphere</h2>
+Radius:<br><input type="number" id="spr"/ OnChange="spr()"/><br><br><br>
+Diameter:<br><input type="number" id="spd"/ OnChange="spd()"/><br><br><br>
+Volume:<br><input type="number" id="spv"/ OnChange="spv()"/><br><br><br>
+Surface Area:<br><input type="number" id="spa"/ OnChange="spa()"/><br><br><br>
+</p></div>
+</body>
+</html>

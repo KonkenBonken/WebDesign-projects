@@ -1,0 +1,163 @@
+<html>
+<head>
+<link rel="icon" type="image/png" href="Calcnd.png"/>
+<title>Calc - Time</title>
+<script data-ad-client="ca-pub-2422033382456580" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<style>
+div.plats {
+  margin: 0px 0px 0px 750px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #334;
+}
+.topnav a.active {
+  background-color: #321;
+  color: white;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #223;
+}
+input[type=number] {
+    border: none;
+    border-bottom: 3px solid #334; 
+    background: none; 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=button] {
+  background-color: #334;
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: inline-block;
+}
+</style>
+</head>
+<script>
+function Y(){
+var y = document.getElementById('Y').value;
+var w = y * 52;
+document.getElementById("W").value = w;
+var d = y * 365;
+document.getElementById("D").value = d;
+var h = d * 24;
+document.getElementById("H").value = h;
+var m = h * 60;
+document.getElementById("M").value = m;
+var s = m * 60;
+document.getElementById("S").value = s;
+}
+function W(){
+var w = document.getElementById('W').value;
+var d = w * 7;
+document.getElementById("D").value = d;
+var y = d / 365;
+document.getElementById("Y").value = y;
+var h = d * 24;
+document.getElementById("H").value = h;
+var m = h * 60;
+document.getElementById("M").value = m;
+var s = m * 60;
+document.getElementById("S").value = s;
+}
+function D(){
+var d = document.getElementById('D').value;
+var w = d / 7;
+document.getElementById("W").value = w;
+var y = d / 365;
+document.getElementById("Y").value = y;
+var h = d * 24;
+document.getElementById("H").value = h;
+var m = h * 60;
+document.getElementById("M").value = m;
+var s = m * 60;
+document.getElementById("S").value = s;
+}
+function H(){
+var h = document.getElementById('H').value;
+var d = h / 24;
+document.getElementById("D").value = d;
+var w = d / 7;
+document.getElementById("W").value = w;
+var y = d / 365;
+document.getElementById("Y").value = y;
+var m = h * 60;
+document.getElementById("M").value = m;
+var s = m * 60;
+document.getElementById("S").value = s;
+}
+function M(){
+var m = document.getElementById('M').value;
+var s = m * 60;
+document.getElementById("S").value = s;
+var h = m / 60;
+document.getElementById("H").value = h;
+var d = h / 24;
+document.getElementById("D").value = d;
+var w = d / 7;
+document.getElementById("W").value = w;
+var y = d / 365;
+document.getElementById("Y").value = y;
+}
+function S(){
+var s = document.getElementById('S').value;
+var m = s / 60;
+document.getElementById("M").value = m;
+var h = m / 60;
+document.getElementById("H").value = h;
+var d = h / 24;
+document.getElementById("D").value = d;
+var w = d / 7;
+document.getElementById("W").value = w;
+var y = d / 365;
+document.getElementById("Y").value = y;
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body style="background-color:#bcd;">
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="Geometry.html">Geometry</a></li>
+  <li><a href="Temperature.html">Temperature</a></li>
+  <li><a href="Time.html">Time</a></li>
+  <li><a href="Pi.html">Pi</a></li>
+  <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=konrad05pettersson@gmail.com&su=Bug+Report!&body=Describe+the+founded+bug+here:">Report a Bug</a></li>
+</ul>
+<noscript><h1>Sorry, your browser does not support JavaScript!</h1></noscript>
+<div class="plats">
+<p><br><br>
+Years:<br><input type="number" id="Y"/ OnChange="Y()"/><br><br><br>
+Weeks:<br><input type="number" id="W"/ OnChange="W()"/><br><br><br>
+Days:<br><input type="number" id="D"/ OnChange="D()"/><br><br><br>
+Hours:<br><input type="number" id="H"/ OnChange="H()"/><br><br><br>
+Minutes:<br><input type="number" id="M"/ OnChange="M()"/><br><br><br>
+Seconds:<br><input type="number" id="S"/ OnChange="S()"/><br><br><br><br></p>
+<p style="color:#123;font-size:10px;">Not Leap Year</p>
+</div>
+</body>
+</html>

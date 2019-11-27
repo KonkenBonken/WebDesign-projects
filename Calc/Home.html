@@ -1,0 +1,128 @@
+<html>
+
+   <head>
+<script data-ad-client="ca-pub-2422033382456580" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+         //function that display value
+         function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+
+         //function that evaluates the digit and return result
+         function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+         }
+
+         //function that clear the display
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+      </script>
+      <style>
+
+       td:hover {background-color:#334;}
+
+         input[type="button"]
+         {
+         background-color:#223;
+         color: #fff;
+         border: solid black 1px;
+         width:100%
+         }
+
+         input[type="text"]
+         {
+         color: white;
+         background-color:#223;
+         border: solid black 1px;
+         width:100%
+         }
+.scaled {
+  transform: scale(3);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #334;
+}
+.topnav a.active {
+  background-color: #321;
+  color: white;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #223;
+}
+
+</style>
+<link rel="icon" type="image/png" href="Calcnd.png"/>
+<title>Calc - Home</title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body style="background-color:#bcd;">
+
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="Geometry.html">Geometry</a></li>
+  <li><a href="Temperature.html">Temperature</a></li>
+  <li><a href="Time.html">Time</a></li>
+  <li><a href="Pi.html">Pi</a></li>
+  <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=konrad05pettersson@gmail.com&su=Bug+Report!&body=Describe+the+founded+bug+here:">Report a Bug</a></li>
+</ul>
+
+
+<p><br><br><br><br><br><br><br><br><br><br></p>
+      <div align="center" class="scaled"><table border="1">
+         <tr>
+            <td colspan="3"><input type="text" id="result"/></td>
+            <!-- clr() function will call clr to clear all value -->
+            <td><input type="button" value="c" onclick="clr()"/> </td>
+         </tr>
+         <tr>
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="button" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" value="3" onclick="dis('3')"/> </td>
+            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" value="6" onclick="dis('6')"/> </td>
+            <td><input type="button" value="-" onclick="dis('-')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" value="9" onclick="dis('9')"/> </td>
+            <td><input type="button" value="+" onclick="dis('+')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" value="0" onclick="dis('0')"/> </td>
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="=" onclick="solve()"/> </td>
+            <td><input type="button" value="*" onclick="dis('*')"/> </td>
+         </tr>
+      </table> </div>
+
+</body>
+</html>
