@@ -1,0 +1,41 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="App.css">
+<script src="App.js"></script>
+</head>
+<body">
+<div class="Apppage">
+  <table border="0">
+    <tr>
+      <th class="Stor">Denna person</th>
+      <th class="Liten">Ska Betala</th>
+      <th class="Stor">Så här mycket</th>
+      <th class="Liten">Till</th>
+      <th class="Stor">Denna Person</th>
+    </tr>
+  </table>
+<div id="MainTableDiv"></div>
+
+
+
+    <table border="0" class="MainTable" id="AddNew">
+<tr><th class="AddNew"><p style="color: rgba(0, 0, 0, 0);">1</p></th></tr>
+      <tr id="AddNew">
+        <th class="AddNew"><p class="AddNew" onclick="AddNew()">&nbsp;&nbsp;Lägg till en ny Skuld</p></th>
+        <th class="AddNew"></th>
+      </tr>
+
+
+  <table border="0" class="MainTable" id="popup">
+    <tr>
+      <th class="Text"><input type="text" placeholder="Namn" id="namn1"></th>
+        <th class="Mellan">Ska Betala</th>
+      <th class="Text"><input type="number" min="0" class="pris" step="5" placeholder="Pris" id="pris" value="0"><img src="minus.png" class="minus" onclick="this.parentNode.querySelector('[type=number]').stepDown();"><img src="plus.png" class="plus" id="plus" onclick="this.parentNode.querySelector('[type=number]').stepUp();"></input></th>
+        <th class="Mellan">Kronor Till</th>
+      <th class="Text"><input type="text" placeholder="Namn" id="namn2"></th>
+      <th><p style="color: rgba(0, 0, 0, 0);">__<img src="Add.png" class="trash" onclick="add()"></p></th>
+    </tr>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body { background-image: linear-gradient(to right top, #51002e, #4a0a39, #401343, #341b4a, #24214f, #2a204e, #2f1e4c, #341d4a, #47133d, #520a2c, #550b19, #511500);}
+
+@font-face {
+font-family: LogoFont;
+src: url(Creword_Regular.otf);
+}
+body {
+-webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+overflow: hidden;
+}
+h1.mainpage {
+  text-align: center;
+  font-size: 650%;
+  font-family: LogoFont;
+  padding-top: 10%;
+}
+p {
+text-align: center;
+}
+button.Main {
+  background-color: rgba(32, 9, 16, 0.77);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 200%;
+  align-content: center;
+  border-radius: 6px;
+  width: 35%;
+  height: 10%
+}
+button.Main:hover {
+  box-shadow: 10px 15px 50px rgba(0,0,0,.5);
+  position: relative;
+             top: -2px;
+             left: -1px;
+}
