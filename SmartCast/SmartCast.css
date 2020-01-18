@@ -1,0 +1,107 @@
+html {
+  overflow: hidden;
+  background-color: black;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=), url(https://source.unsplash.com/user/erondu/1920x1080);
+  background-repeat: repeat;
+}
+div#Nyheterdiv::-webkit-scrollbar {
+  display: none;
+}
+p {
+  color: white;
+  font: 1.3rem Inconsolata, monospace;
+  margin-left: 45px;
+  font-size: 40px;
+}
+p.newsDes {
+  font-size: 90%;
+  width: 40%;
+}
+p.newsTit {
+    font-size: 125%;
+  width: 40%;
+}
+p.newsSor {
+font-size: 70%;
+  width: 40%;
+}
+p.Dagensnews {
+  font-size: 80%;
+}
+div#Nyheterdiv {
+  margin-bottom: 0px;
+}
+img.Reload {
+  width: 15px;
+  height: 15px;
+  float: right;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+span#Klockan {
+  font-size: 200%;
+}
+
+p.Vader {
+  float: right;
+  text-align: center;
+  margin-right: 15%;
+  display: none;
+}
+span#temp {
+  font-size: 100px;
+}
+sup {
+  font-size: 100%;
+}
+#Icon {
+  border-radius: 30%;
+  height: 90px;
+  width: 90px;
+}
+span#VTid {
+  font-size: 30%;
+}
+p.Osyn {
+  color: rgba(0,0,0,0);
+}
+div.Spotify {
+  float: right;
+  text-align: center;
+  align-content: center;
+  margin-right: 7%;
+  width: 300px;
+  display: none;
+}
+img#LåtAlb {
+  width: 200px;
+  border-radius: 5%;
+}
+
+#Icon:hover, p:hover:not(.TidDatum):not(.Vader):not(.newsSor), span:hover:not(#DatumSiff), a:hover, .barfylld:hover, img#LåtAlb:hover {
+animation-name: LightHover;
+animation-duration: 0.3s;
+animation-fill-mode: forwards;
+}
+                                  img#LåtAlb:hover {
+                                  animation-name: LåtAlbInvert;
+                                  animation-duration: 4s;
+                                  animation-fill-mode: forwards;
+                                  animation-iteration-count: infinite;
+                                                                  }
+                                  @keyframes LåtAlbInvert {
+                                    0% {filter: hue-rotate(0deg);}
+                                    100% {filter: hue-rotate(365deg);}
+                                  }
+@keyframes LightHover {
+  0%    {filter: drop-shadow(0px 0px 0px rgba(0,0,0,0));}
+  100%   {filter: drop-shadow(0px 0px 50px rgba(255,255,255,1));}
+}
+div.barintfylld {
+  background-color: #444
+}
+div.barfylld {
+  background-color: #fff
+}
