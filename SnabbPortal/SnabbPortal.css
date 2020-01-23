@@ -1,0 +1,196 @@
+body {
+background-color: #3c404b;
+background-repeat: repeat;
+overflow: hidden;
+cursor: progress;
+}
+.whole {
+  position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=), url(https://source.unsplash.com/user/erondu/1920x1080);
+}
+h1 {
+color: #0099CC;
+text-align: center;
+}
+a {
+text-decoration: none;
+}
+a:hover, img.Reload:hover {
+opacity: .85;
+}
+marquee#Joke {
+font-size: 20px !important;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 2px;
+position: absolute;
+}
+p#skamt {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  margin-top: 3000px;
+}
+.snabblankar {
+margin: auto;
+display: table;
+padding: 20px;
+width: 500px;
+height: 70px;
+position: relative;
+top: 50%;
+display: block;
+background-color: rgba(60, 64, 75, 0.6);
+border-radius: 20px 20px 0 0;
+}
+div#MittPan {
+  border-radius: 20px;
+  width: 540px;
+margin: auto;
+margin-left: 688px;
+}
+.lankar {
+margin: 0px;
+vertical-align: text-top;
+display: table;
+}
+.lankar>th {
+width:100px;
+padding: 10px;
+}
+.lanktext {
+color: white;
+padding-top: 6px;
+text-align: center;
+font-size: 80%;
+font-weight: 100;
+margin: 0px;
+letter-spacing: 1px;
+}
+#lit {
+  height: 1px !important;
+}
+.citatbox {
+margin: auto;
+width: 540px;
+position: relative;
+padding: 20px;
+display: table;
+top: 50%;
+border-radius: 0 0 20px 20px;
+background-color: rgba(60, 64, 75, 0.6);
+
+}
+.skapalank>th>a>img{
+vertical-align:middle;
+}
+.skapatext{
+color: white;
+padding-top: 6px;
+text-align: center;
+font-size: 70%;
+font-weight: 100;
+margin: 0px;
+letter-spacing: 0px;
+}
+#citatrubrik {
+color: #FFF;
+text-align: left;
+font-weight: 500;
+padding-left: 25px;
+font-size: 10px;
+}
+#citat {
+color: #FFF;
+text-align: left;
+font-size: 95%;
+font-weight: 400;
+padding-left: 25px;
+font-style: italic;
+}
+iframe {
+padding-top: 18px;
+}
+#logga {
+margin-left: 1236px;
+margin-top: 30px;
+height: 100px;
+width: 100px;
+filter: brightness(0);
+opacity: .60;
+}
+th.lank img {
+  height: 50px;
+  animation: in 500ms linear;
+  animation: float 6s ease-in-out infinite;
+  border-radius: 10px;
+}
+@keyframes in {
+    from {
+        transform:scale(0,0);
+    }
+    to {
+        transform:scale(1,1);
+    }
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+div#Nyheterdiv::-webkit-scrollbar {
+  display: none;
+}
+p, marquee#Joke {
+  color: white;
+  font: 1.3rem Inconsolata, monospace;
+  margin-left: 45px;
+  font-size: 40px;
+}
+p.newsDes {
+  font-size: 90%;
+
+}
+p.newsTit {
+    font-size: 125%;
+
+}
+p.newsSor {
+font-size: 70%;
+
+}
+p.Dagensnews {
+  font-size: 80%;
+  position: absolute;
+  top: 0px;
+}
+div#Nyheterdiv {
+  margin-bottom: 0px;
+  position: absolute;
+  width: 600px;
+  top: 50px;
+}
+img.Reload {
+  width: 15px;
+  height: 15px;
+  float: right;
+  position: relative;
+  bottom: 50px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
