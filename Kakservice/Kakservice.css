@@ -1,0 +1,134 @@
+html {
+  background-image: url(https://www.kakservice.se/SiteModule/Templates2017/Images/Kakservice-Cloth-BG.png);
+  background-repeat: repeat;
+  text-align: center;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+* {
+  transition: 0.3s;
+}
+@media only screen and (max-aspect-ratio:9/16) {
+  html {
+    /*background: lightblue;*/
+    font-size: 30px;
+  }
+  div.produktDiv {
+    padding: 0px;
+
+  }
+
+}
+
+div.produkter {
+  width: 60vw;
+  overflow: hidden;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+div.produktDiv {
+  transition: all 0.4s;
+  background: #fefeec;
+  border-radius: 3px;
+  box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  z-index: 1;
+  text-align: left;
+  padding: 2vw;
+
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  /*grid-template-rows: 1fr 0fr;*/
+  grid-template-rows: 232px auto auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+div.produktDiv:hover {
+  background: #fefeec;
+  border-radius: 6px;
+  box-shadow: 4px 6px 15px 5px rgba(0, 0, 0, 0.5);
+  /*transform: scale(1.01);*/
+  z-index: -1;
+}
+div.produktDiv div.bilddiv {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0 3px 3px 3px;
+
+}
+div.produktDiv div.bilddiv img{
+  width: 100%;
+  z-index: -1;
+  border-radius: 0 3px 3px 3px;
+}
+p.beskriv {
+  word-break: normal;
+  padding-right: 10px;
+}
+div.produktDiv div.textdiv {
+  grid-area: 1 / 1 / 2 / 2;
+}
+h1.Titel {
+  text-shadow: 3px 3px 5px rgba(255, 255, 255, 1);
+
+}
+div.produktDiv div.merinfo {
+  margin-top: 16px;
+grid-area: 2 / 1 / 3 / 3;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.dontshow {
+  height: 0px;
+  overflow: hidden;
+}
+div.prisdiv {
+  position: absolute;
+  width: 65px;
+  height: 40px;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: -40px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  box-shadow: 4px 6px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.clickformore {
+  grid-area: 2 / 1 / 3 / 2;
+  cursor: pointer;
+}
+div.prisdiv p {
+  padding-left: 10px;
+  display:table-cell;
+   vertical-align:middle;
+}
+div.prisdiv span.femti{
+font-size: 200%;
+}
+div.prisdiv span.kr{
+font-size: 75%;
+}
+table.näringsV tbody tr * {
+  text-align: left;
+}
+table.näringsV {
+  margin-top: 16px;
+grid-area: 1 / 2 / 2 / 3;
+}
+.innehåll {
+
+}
+.Allergiinformation {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.fa.vrid {
+  transform: rotate(90deg);
+}
+.ball {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+font-size: 120%;
+}
