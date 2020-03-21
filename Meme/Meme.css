@@ -1,0 +1,75 @@
+html, body {
+  background-color: #222;
+  text-align: center;
+  overflow-x: hidden;
+}
+div {
+  padding: 0;
+}
+div.AllMemeDiv {
+  display: inline-block;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+.MemeDiv {
+  width: 50vw;
+  margin: 1.5vw;
+  padding: 1.5vw;
+  background-color: #111;
+  border-radius: 10px;
+    text-align: center;
+}
+img.MemeImg {
+  width: 100%;
+}
+div.MemeDiv.long img {
+  height: 80vh;
+  overflow-y: hidden;
+  object-fit: cover;
+}
+div.clickForMore {
+  position: absolute;
+  z-index: 10;
+  width: 30vw;
+  height: 2em;
+  margin-top: -13vh;
+    display: grid;
+    grid-template-columns: 10vw 30vw 10vw;
+    grid-template-rows: 2em;
+}
+div.clickForMore div {
+grid-area: 1 / 2 / 2 / 3;
+background-color: rgba(50, 50, 50, 0.6);
+border-color: rgba(50, 50, 50, 0.8);
+border-width: medium;
+border-radius: 1vh;
+box-shadow: #000 2px 2px 20px;
+width: 100%;
+height: 100%;
+}
+div.clickForMore div p {
+  margin-top: 0.5em;
+  color: rgba(240, 240, 240, 0.9);
+  text-shadow: #000 0px 0px 7px;
+}
+div.thumbsdiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+div.thumb {
+  padding: 0;
+  text-shadow: #000 5px 2px 20px;
+  font-size: 4em;
+}
+div.thumb.up.active i, i.fa-thumbs-up:hover {
+  color: #ff4500; /*orange*/
+}
+div.thumb.down.active i, i.fa-thumbs-down:hover {
+  color: #7193ff; /*blue*/
+}
+i.fa-thumbs-up {
+  color: #818384; /*gray*/
+}
+i.fa-thumbs-down {
+  color: #818384; /*gray*/
+}
