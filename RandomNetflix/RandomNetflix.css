@@ -1,0 +1,209 @@
+html, body {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=), url(https://source.unsplash.com/user/erondu/1920x1080);
+  overflow: hidden;
+  background-position: top;
+  text-align: center;
+}
+
+#allist, #scrollstop {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin-top: 100%;
+  position: absolute;
+}
+
+div.startbutton {
+  background-color: rgba(229, 9, 20, 0.9);
+  position: absolute;
+  left: 50%;
+  margin-left: -250;
+  top: 650px;
+  height: 50px;
+  width: 500px;
+  border-radius: 25px;
+  color: #fff;
+  line-height: 50px !important;
+  user-select: none;
+}
+
+div.titlediv {
+  position: absolute;
+  top: 400px;
+  text-align: center;
+  width: 100%;
+}
+
+div.titlediv p.title, div.startbutton {
+  color: #fff;
+  font-family: "Arial Black", Gadget, sans-serif;
+  z-index: 2;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+div.titlediv p.title span.title {
+  font-size: 200%;
+}
+
+div.titlediv p.title span.minsif {
+  font-size: 200%;
+}
+
+div.titlediv p.title span.mintex span.M {
+  font-size: 180%;
+}
+
+div.titlediv p.title span.mintex {
+  font-size: 80%;
+}
+
+div.titlediv p.title span.des {
+  font-size: 70%;
+}
+
+div.titlediv p.title div.barytt {
+  line-height: normal;
+  position: absolute;
+  left: 50%;
+  margin-left: -250;
+  height: 25px;
+  width: 500px;
+  background-color: rgba(229, 9, 20, 0.2);
+}
+
+div.titlediv p.title div.barinn {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgba(229, 9, 20, 0.7);
+  text-align: left;
+  overflow: hidden;
+}
+
+div#div {
+  margin-top: 100px;
+}
+
+div#div img {
+  object-fit: cover;
+  position: absolute;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+div#div span {
+  display: none;
+}
+
+.ut, img:nth-child(7) {
+  border-radius: 50%;
+  width: 0px;
+  height: 0px;
+  left: 600px;
+  margin-left: 0;
+  animation-name: imgvänut;
+}
+
+.ut, img:nth-child(9) {
+  border-radius: 50%;
+  width: 0px;
+  height: 0px;
+  left: 600px;
+  margin-left: 0;
+}
+
+.Hög, img:nth-child(1) {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  right: 607px;
+  animation-name: imguthög;
+}
+
+.Vän, img:nth-child(5) {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  left: 607px;
+  animation-name: imgmitvän;
+}
+
+.Mit, img:nth-child(3) {
+  right: 50%;
+  margin-right: -107px;
+  border-radius: 10px;
+  height: 300px;
+  width: 214px;
+  animation-name: imghögmit;
+}
+
+@keyframes imghögmit {
+  from {
+    right: 607px;
+    margin-right: 0;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  to {
+    right: 50%;
+    margin-right: -107px;
+    border-radius: 10px;
+    height: 300px;
+    width: 214px;
+  }
+}
+
+@keyframes imgmitvän {
+  from {
+    left: 853px;
+    border-radius: 10px;
+    height: 300px;
+    width: 214px;
+  }
+
+  to {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    left: 607px;
+  }
+}
+
+@keyframes imgvänut {
+  from {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    left: 607px;
+    margin-left: 0;
+  }
+
+  to {
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+    left: 650px;
+    margin-left: 0;
+  }
+}
+
+@keyframes imguthög {
+  from {
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+    right: 650px;
+    margin-left: 0;
+  }
+
+  to {
+    right: 607px;
+    margin-right: 0;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+}
